@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu — FOREST Restaurant</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="menu">
+
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="logo">FOR<span>EST</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-page="home" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="menu.html" data-page="menu" data-i18n="nav.menu">Menu</a></li>
+        <li><a href="reservation.html" data-page="reservation" data-i18n="nav.reservation">Réservation</a></li>
+        <li><a href="events.html" data-page="events" data-i18n="nav.events">Événements</a></li>
+        <li><a href="gallery.html" data-page="gallery" data-i18n="nav.gallery">Galerie</a></li>
+        <li>
+          <div class="lang-switch">
+            <button class="lang-btn active" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+          </div>
+        </li>
+      </ul>
+      <button class="menu-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <h1 data-i18n="menuPage.title">Notre Menu</h1>
+    <p data-i18n="menuPage.subtitle">Une cuisine de saison, inspirée par la nature et les producteurs locaux</p>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="menu-tabs">
+        <button class="menu-tab active" data-tab="starters" data-i18n="menuPage.tabStarters">Entrées</button>
+        <button class="menu-tab" data-tab="mains" data-i18n="menuPage.tabMains">Plats</button>
+        <button class="menu-tab" data-tab="desserts" data-i18n="menuPage.tabDesserts">Desserts</button>
+        <button class="menu-tab" data-tab="drinks" data-i18n="menuPage.tabDrinks">Boissons</button>
+      </div>
+
+      <!-- Starters -->
+      <div class="menu-category active" data-category="starters">
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h3 data-i18n="menuItems.s1name">Velouté de champignons des bois</h3>
+              <p data-i18n="menuItems.s1desc">Cèpes, girolles, crème de truffe noire, chips de pain de seigle</p>
+              <span class="menu-tag" data-i18n="menuPage.tagVeg">Végétarien</span>
+            </div>
+            <span class="menu-item-price">14€</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h3 data-i18n="menuItems.s2name">Tartare de betterave & chèvre frais</h3>
+              <p data-i18n="menuItems.s2desc">Betterave bio, chèvre de la ferme, noix torréfiées, vinaigrette au miel</p>
+              <span class="menu-tag" data-i18n="menuPage.tagVegan">Vegan</span>
+            </div>
+            <span class="menu-item-price">12€</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h3 data-i18n="menuItems.s3name">Carpaccio de Saint-Jacques</h3>
+              <p data-i18n="menuItems.s3desc">Noix de Saint-Jacques, agrumes, huile de ciboulette, fleur de sel</p>
+              <span class="menu-tag" data-i18n="menuPage.tagChef">Spécialité chef</span>
+            </div>
+            <span class="menu-item-price">18€</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mains -->
+      <div class="menu-category" data-category="mains">
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h3 data-i18n="menuItems.m1name">Filet de cerf sauce grand veneur</h3>
+              <p data-i18n="menuItems.m1desc">Purée de céleri-rave, légumes racines rôtis, jus au genièvre</p>
+              <span class="menu-tag" data-i18n="menuPage.tagChef">Spécialité chef</span>
+            </div>
+            <span class="menu-item-price">32€</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h3 data-i18n="menuItems.m2name">Risotto aux cèpes & parmesan</h3>
+              <p data-i18n="menuItems.m2desc">Riz carnaroli, cèpes frais, parmesan 24 mois, huile de truffe</p>
+              <span class="menu-tag" data-i18n="menuPage.tagVeg">Végétarien</span>
+            </div>
+            <span class="menu-item-price">24€</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h3 data-i18n="menuItems.m3name">Bar de ligne en croûte d'herbes</h3>
+              <p data-i18n="menuItems.m3desc">Légumes de saison, beurre blanc au vin blanc, micro-pousses</p>
+            </div>
+            <span class="menu-item-price">28€</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h3 data-i18n="menuItems.m4name">Magret de canard laqué au miel de forêt</h3>
+              <p data-i18n="menuItems.m4desc">Pommes de terre confites, jus au porto, chutney de figues</p>
+            </div>
+            <span class="menu-item-price">26€</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desserts -->
+      <div class="menu-category" data-category="desserts">
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h3 data-i18n="menuItems.d1name">Tarte Tatin revisitée</h3>
+              <p data-i18n="menuItems.d1desc">Pommes caramélisées, crème fraîche vanillée, tuile aux amandes</p>
+            </div>
+            <span class="menu-item-price">10€</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h3 data-i18n="menuItems.d2name">Mousse au chocolat noir 70%</h3>
+              <p data-i18n="menuItems.d2desc">Cacao grand cru, crème chantilly, éclats de fèves de cacao</p>
+            </div>
+            <span class="menu-item-price">9€</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h3 data-i18n="menuItems.d3name">Sorbet aux fruits rouges</h3>
+              <p data-i18n="menuItems.d3desc">Framboises, mûres, cassis — cueillis en forêt d'Île-de-France</p>
+              <span class="menu-tag" data-i18n="menuPage.tagVegan">Vegan</span>
+            </div>
+            <span class="menu-item-price">8€</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drinks -->
+      <div class="menu-category" data-category="drinks">
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h3 data-i18n="menuItems.dr1name">Vin rouge — Côte de Nuits</h3>
+              <p data-i18n="menuItems.dr1desc">Pinot noir, notes de cerise et sous-bois</p>
+            </div>
+            <span class="menu-item-price">8€</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h3 data-i18n="menuItems.dr2name">Vin blanc — Sancerre</h3>
+              <p data-i18n="menuItems.dr2desc">Sauvignon blanc, fraîcheur minérale</p>
+            </div>
+            <span class="menu-item-price">7€</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h3 data-i18n="menuItems.dr3name">Cocktail Forêt Noire</h3>
+              <p data-i18n="menuItems.dr3desc">Gin artisanal, liqueur de mûre, tonic, romarin fumé</p>
+            </div>
+            <span class="menu-item-price">12€</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h3 data-i18n="menuItems.dr4name">Infusion maison</h3>
+              <p data-i18n="menuItems.dr4desc">Thym, mélisse, verveine — récoltés en forêt</p>
+            </div>
+            <span class="menu-item-price">4€</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <h2 data-i18n="cta.title">Prêt pour une aventure culinaire ?</h2>
+      <p data-i18n="cta.subtitle">Réservez dès maintenant et laissez-vous transporter par les saveurs de la forêt.</p>
+      <a href="reservation.html" class="btn btn-primary" data-i18n="cta.btn">Réserver maintenant</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">FOR<span>EST</span></a>
+          <p data-i18n="footer.desc">Restaurant gastronomique au cœur de la nature.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.navTitle">Navigation</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+            <li><a href="menu.html" data-i18n="nav.menu">Menu</a></li>
+            <li><a href="reservation.html" data-i18n="nav.reservation">Réservation</a></li>
+            <li><a href="events.html" data-i18n="nav.events">Événements</a></li>
+            <li><a href="gallery.html" data-i18n="nav.gallery">Galerie</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.contactTitle">Contact</h4>
+          <ul>
+            <li data-i18n="footer.address">12 Allée des Chênes, 75016 Paris</li>
+            <li data-i18n="footer.phone">+33 1 42 00 00 00</li>
+            <li data-i18n="footer.email">contact@forest-restaurant.fr</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.hoursTitle">Horaires</h4>
+          <ul>
+            <li data-i18n="footer.hours1">Mar – Sam : 12h – 14h30 / 19h – 22h30</li>
+            <li data-i18n="footer.hours2">Dim : Brunch 10h – 15h</li>
+            <li data-i18n="footer.hours3">Lun : Fermé</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footer.rights">© 2026 FOREST Restaurant. Tous droits réservés.</span>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

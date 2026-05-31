@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FOREST — Restaurant Gastronomique</title>
+  <meta name="description" content="FOREST — Restaurant gastronomique au cœur de la nature. Menu digital, réservation en ligne, événements et galerie.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="logo">FOR<span>EST</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-page="home" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="menu.html" data-page="menu" data-i18n="nav.menu">Menu</a></li>
+        <li><a href="reservation.html" data-page="reservation" data-i18n="nav.reservation">Réservation</a></li>
+        <li><a href="events.html" data-page="events" data-i18n="nav.events">Événements</a></li>
+        <li><a href="gallery.html" data-page="gallery" data-i18n="nav.gallery">Galerie</a></li>
+        <li>
+          <div class="lang-switch">
+            <button class="lang-btn active" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+          </div>
+        </li>
+      </ul>
+      <button class="menu-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-badge" data-i18n="hero.badge">Cuisine forestière & gastronomique</span>
+      <h1><span data-i18n="hero.title">FOR</span><span data-i18n="hero.titleAccent">EST</span></h1>
+      <p data-i18n="hero.subtitle">Une expérience culinaire immersive au cœur de la nature. Saveurs locales, produits de saison et ambiance chaleureuse.</p>
+      <div class="hero-buttons">
+        <a href="menu.html" class="btn btn-primary" data-i18n="hero.btnMenu">Voir le menu</a>
+        <a href="reservation.html" class="btn btn-outline" data-i18n="hero.btnReserve">Réserver une table</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about">
+    <div class="container">
+      <div class="about-grid">
+        <img
+          class="about-image"
+          src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80"
+          alt="Intérieur du restaurant FOREST"
+        >
+        <div class="about-text">
+          <span class="section-label" data-i18n="about.label">Notre histoire</span>
+          <h3 data-i18n="about.title">Bienvenue au cœur de la forêt</h3>
+          <p data-i18n="about.text1">FOREST est né d'une passion : célébrer les produits du terroir dans un cadre inspiré par la nature.</p>
+          <p data-i18n="about.text2">Nous travaillons exclusivement avec des producteurs locaux pour vous offrir une cuisine authentique, responsable et créative.</p>
+          <div class="about-features">
+            <div class="feature-item">
+              <div class="feature-icon">🌿</div>
+              <div>
+                <strong data-i18n="about.feature1Title">Produits locaux</strong>
+                <span data-i18n="about.feature1Desc">Circuit court & bio</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">⭐</div>
+              <div>
+                <strong data-i18n="about.feature2Title">Chef étoilé</strong>
+                <span data-i18n="about.feature2Desc">Créativité & excellence</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🌲</div>
+              <div>
+                <strong data-i18n="about.feature3Title">Ambiance unique</strong>
+                <span data-i18n="about.feature3Desc">Décor nature & bois</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🍷</div>
+              <div>
+                <strong data-i18n="about.feature4Title">Vins sélectionnés</strong>
+                <span data-i18n="about.feature4Desc">Cave de 200 références</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Links -->
+  <section class="quick-links">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="quick.label">Découvrir</span>
+        <h2 data-i18n="quick.title">Tout ce que FOREST vous propose</h2>
+      </div>
+      <div class="cards-grid">
+        <article class="card">
+          <img class="card-image" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Menu">
+          <div class="card-body">
+            <h3 data-i18n="quick.menuTitle">Menu digital</h3>
+            <p data-i18n="quick.menuDesc">Parcourez nos entrées, plats et desserts avec descriptions détaillées.</p>
+            <a href="menu.html" class="card-link" data-i18n="quick.menuLink">Explorer →</a>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-image" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80" alt="Réservation">
+          <div class="card-body">
+            <h3 data-i18n="quick.reserveTitle">Réservation en ligne</h3>
+            <p data-i18n="quick.reserveDesc">Réservez votre table en quelques clics, 7j/7.</p>
+            <a href="reservation.html" class="card-link" data-i18n="quick.reserveLink">Réserver →</a>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-image" src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&q=80" alt="Événements">
+          <div class="card-body">
+            <h3 data-i18n="quick.eventsTitle">Nos événements</h3>
+            <p data-i18n="quick.eventsDesc">Soirées dégustation, brunch dominical et concerts live.</p>
+            <a href="events.html" class="card-link" data-i18n="quick.eventsLink">Voir les événements →</a>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-image" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Galerie">
+          <div class="card-body">
+            <h3 data-i18n="quick.galleryTitle">Galerie photos</h3>
+            <p data-i18n="quick.galleryDesc">Plongez dans l'univers visuel de notre restaurant.</p>
+            <a href="gallery.html" class="card-link" data-i18n="quick.galleryLink">Voir la galerie →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2 data-i18n="cta.title">Prêt pour une aventure culinaire ?</h2>
+      <p data-i18n="cta.subtitle">Réservez dès maintenant et laissez-vous transporter par les saveurs de la forêt.</p>
+      <a href="reservation.html" class="btn btn-primary" data-i18n="cta.btn">Réserver maintenant</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">FOR<span>EST</span></a>
+          <p data-i18n="footer.desc">Restaurant gastronomique au cœur de la nature.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.navTitle">Navigation</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+            <li><a href="menu.html" data-i18n="nav.menu">Menu</a></li>
+            <li><a href="reservation.html" data-i18n="nav.reservation">Réservation</a></li>
+            <li><a href="events.html" data-i18n="nav.events">Événements</a></li>
+            <li><a href="gallery.html" data-i18n="nav.gallery">Galerie</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.contactTitle">Contact</h4>
+          <ul>
+            <li data-i18n="footer.address">12 Allée des Chênes, 75016 Paris</li>
+            <li data-i18n="footer.phone">+33 1 42 00 00 00</li>
+            <li data-i18n="footer.email">contact@forest-restaurant.fr</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.hoursTitle">Horaires</h4>
+          <ul>
+            <li data-i18n="footer.hours1">Mar – Sam : 12h – 14h30 / 19h – 22h30</li>
+            <li data-i18n="footer.hours2">Dim : Brunch 10h – 15h</li>
+            <li data-i18n="footer.hours3">Lun : Fermé</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footer.rights">© 2026 FOREST Restaurant. Tous droits réservés.</span>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

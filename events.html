@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Événements — FOREST Restaurant</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="events">
+
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="logo">FOR<span>EST</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-page="home" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="menu.html" data-page="menu" data-i18n="nav.menu">Menu</a></li>
+        <li><a href="reservation.html" data-page="reservation" data-i18n="nav.reservation">Réservation</a></li>
+        <li><a href="events.html" data-page="events" data-i18n="nav.events">Événements</a></li>
+        <li><a href="gallery.html" data-page="gallery" data-i18n="nav.gallery">Galerie</a></li>
+        <li>
+          <div class="lang-switch">
+            <button class="lang-btn active" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+          </div>
+        </li>
+      </ul>
+      <button class="menu-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <h1 data-i18n="eventsPage.title">Événements</h1>
+    <p data-i18n="eventsPage.subtitle">Soirées spéciales, dégustations et moments à partager</p>
+  </section>
+
+  <section class="events-section">
+    <div class="container">
+
+      <article class="event-card">
+        <div class="event-date">
+          <span class="day">14</span>
+          <span class="month" data-i18n="eventsPage.monthJun">Juin</span>
+        </div>
+        <div class="event-content">
+          <h3 data-i18n="eventsPage.e1title">Soirée Dégustation — Truffe & Vin</h3>
+          <p data-i18n="eventsPage.e1desc">Un menu 5 services autour de la truffe noire du Périgord, accompagné de vins sélectionnés par notre sommelier.</p>
+          <div class="event-meta">
+            <span>🕐 <span data-i18n="eventsPage.e1time">19h30</span></span>
+            <span>💰 <span data-i18n="eventsPage.e1price">95€ / personne</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="event-card">
+        <div class="event-date">
+          <span class="day">22</span>
+          <span class="month" data-i18n="eventsPage.monthJun">Juin</span>
+        </div>
+        <div class="event-content">
+          <h3 data-i18n="eventsPage.e2title">Brunch Dominical en Forêt</h3>
+          <p data-i18n="eventsPage.e2desc">Buffet gourmand : viennoiseries maison, œufs Bénédictine, pancakes aux fruits rouges, jus pressés.</p>
+          <div class="event-meta">
+            <span>🕐 <span data-i18n="eventsPage.e2time">10h – 15h</span></span>
+            <span>💰 <span data-i18n="eventsPage.e2price">45€ / personne</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="event-card">
+        <div class="event-date">
+          <span class="day">05</span>
+          <span class="month" data-i18n="eventsPage.monthJul">Juillet</span>
+        </div>
+        <div class="event-content">
+          <h3 data-i18n="eventsPage.e3title">Concert Acoustique Live</h3>
+          <p data-i18n="eventsPage.e3desc">Musique jazz & bossa nova en live dans notre salle principale. Menu tapas forestier disponible.</p>
+          <div class="event-meta">
+            <span>🕐 <span data-i18n="eventsPage.e3time">20h</span></span>
+            <span>💰 <span data-i18n="eventsPage.e3price">Entrée libre</span></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="event-card">
+        <div class="event-date">
+          <span class="day">19</span>
+          <span class="month" data-i18n="eventsPage.monthJul">Juillet</span>
+        </div>
+        <div class="event-content">
+          <h3 data-i18n="eventsPage.e4title">Atelier Cuisine — Cuisine Sauvage</h3>
+          <p data-i18n="eventsPage.e4desc">Apprenez à cuisiner avec les plantes comestibles de la forêt. Atelier de 3h avec déjeuner inclus.</p>
+          <div class="event-meta">
+            <span>🕐 <span data-i18n="eventsPage.e4time">10h – 13h</span></span>
+            <span>💰 <span data-i18n="eventsPage.e4price">75€ / personne</span></span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <h2 data-i18n="cta.title">Prêt pour une aventure culinaire ?</h2>
+      <p data-i18n="cta.subtitle">Réservez dès maintenant et laissez-vous transporter par les saveurs de la forêt.</p>
+      <a href="reservation.html" class="btn btn-primary" data-i18n="cta.btn">Réserver maintenant</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">FOR<span>EST</span></a>
+          <p data-i18n="footer.desc">Restaurant gastronomique au cœur de la nature.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.navTitle">Navigation</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+            <li><a href="menu.html" data-i18n="nav.menu">Menu</a></li>
+            <li><a href="reservation.html" data-i18n="nav.reservation">Réservation</a></li>
+            <li><a href="events.html" data-i18n="nav.events">Événements</a></li>
+            <li><a href="gallery.html" data-i18n="nav.gallery">Galerie</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.contactTitle">Contact</h4>
+          <ul>
+            <li data-i18n="footer.address">12 Allée des Chênes, 75016 Paris</li>
+            <li data-i18n="footer.phone">+33 1 42 00 00 00</li>
+            <li data-i18n="footer.email">contact@forest-restaurant.fr</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.hoursTitle">Horaires</h4>
+          <ul>
+            <li data-i18n="footer.hours1">Mar – Sam : 12h – 14h30 / 19h – 22h30</li>
+            <li data-i18n="footer.hours2">Dim : Brunch 10h – 15h</li>
+            <li data-i18n="footer.hours3">Lun : Fermé</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footer.rights">© 2026 FOREST Restaurant. Tous droits réservés.</span>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

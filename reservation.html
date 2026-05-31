@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réservation — FOREST Restaurant</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="reservation">
+
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="logo">FOR<span>EST</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-page="home" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="menu.html" data-page="menu" data-i18n="nav.menu">Menu</a></li>
+        <li><a href="reservation.html" data-page="reservation" data-i18n="nav.reservation">Réservation</a></li>
+        <li><a href="events.html" data-page="events" data-i18n="nav.events">Événements</a></li>
+        <li><a href="gallery.html" data-page="gallery" data-i18n="nav.gallery">Galerie</a></li>
+        <li>
+          <div class="lang-switch">
+            <button class="lang-btn active" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+          </div>
+        </li>
+      </ul>
+      <button class="menu-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <h1 data-i18n="reservationPage.title">Réservation</h1>
+    <p data-i18n="reservationPage.subtitle">Réservez votre table en ligne — confirmation immédiate</p>
+  </section>
+
+  <section class="reservation-section">
+    <div class="container">
+      <div class="reservation-grid">
+        <div class="reservation-info">
+          <h3 data-i18n="reservationPage.infoTitle">Informations pratiques</h3>
+          <p data-i18n="reservationPage.infoText">Pour les groupes de plus de 8 personnes ou les événements privés, contactez-nous directement par téléphone ou email.</p>
+          <ul class="info-list">
+            <li><strong data-i18n="footer.contactTitle">Contact</strong> <span data-i18n="footer.phone">+33 1 42 00 00 00</span></li>
+            <li><strong>Email</strong> <span data-i18n="footer.email">contact@forest-restaurant.fr</span></li>
+            <li><strong data-i18n="footer.hoursTitle">Horaires</strong> <span data-i18n="footer.hours1">Mar – Sam : 12h – 14h30 / 19h – 22h30</span></li>
+            <li><strong>Adresse</strong> <span data-i18n="footer.address">12 Allée des Chênes, 75016 Paris</span></li>
+          </ul>
+        </div>
+
+        <form class="reservation-form" id="reservation-form">
+          <div class="form-group">
+            <label for="name" data-i18n="reservationPage.labelName">Nom complet</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email" data-i18n="reservationPage.labelEmail">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone" data-i18n="reservationPage.labelPhone">Téléphone</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date" data-i18n="reservationPage.labelDate">Date</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+              <label for="time" data-i18n="reservationPage.labelTime">Heure</label>
+              <select id="time" name="time" required>
+                <option value="12:00">12:00</option>
+                <option value="12:30">12:30</option>
+                <option value="13:00">13:00</option>
+                <option value="13:30">13:30</option>
+                <option value="19:00">19:00</option>
+                <option value="19:30">19:30</option>
+                <option value="20:00">20:00</option>
+                <option value="20:30">20:30</option>
+                <option value="21:00">21:00</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="guests" data-i18n="reservationPage.labelGuests">Nombre de convives</label>
+            <select id="guests" name="guests" required>
+              <option value="1" data-i18n="reservationPage.guests1">1 personne</option>
+              <option value="2" selected data-i18n="reservationPage.guests2">2 personnes</option>
+              <option value="3" data-i18n="reservationPage.guests3">3 personnes</option>
+              <option value="4" data-i18n="reservationPage.guests4">4 personnes</option>
+              <option value="5" data-i18n="reservationPage.guests5">5 personnes</option>
+              <option value="6" data-i18n="reservationPage.guests6">6 personnes</option>
+              <option value="7" data-i18n="reservationPage.guests7">7 personnes</option>
+              <option value="8" data-i18n="reservationPage.guests8">8 personnes</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="notes" data-i18n="reservationPage.labelNotes">Demandes spéciales</label>
+            <textarea id="notes" name="notes" rows="3" data-i18n-placeholder="reservationPage.placeholderNotes"></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark" style="width:100%" data-i18n="reservationPage.btnSubmit">Confirmer la réservation</button>
+          <div class="form-success" id="form-success" data-i18n="reservationPage.success">
+            ✓ Votre réservation a été enregistrée ! Nous vous enverrons une confirmation par email.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">FOR<span>EST</span></a>
+          <p data-i18n="footer.desc">Restaurant gastronomique au cœur de la nature.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.navTitle">Navigation</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+            <li><a href="menu.html" data-i18n="nav.menu">Menu</a></li>
+            <li><a href="reservation.html" data-i18n="nav.reservation">Réservation</a></li>
+            <li><a href="events.html" data-i18n="nav.events">Événements</a></li>
+            <li><a href="gallery.html" data-i18n="nav.gallery">Galerie</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.contactTitle">Contact</h4>
+          <ul>
+            <li data-i18n="footer.address">12 Allée des Chênes, 75016 Paris</li>
+            <li data-i18n="footer.phone">+33 1 42 00 00 00</li>
+            <li data-i18n="footer.email">contact@forest-restaurant.fr</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.hoursTitle">Horaires</h4>
+          <ul>
+            <li data-i18n="footer.hours1">Mar – Sam : 12h – 14h30 / 19h – 22h30</li>
+            <li data-i18n="footer.hours2">Dim : Brunch 10h – 15h</li>
+            <li data-i18n="footer.hours3">Lun : Fermé</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footer.rights">© 2026 FOREST Restaurant. Tous droits réservés.</span>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

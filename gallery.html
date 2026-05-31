@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie — FOREST Restaurant</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="gallery">
+
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="logo">FOR<span>EST</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-page="home" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="menu.html" data-page="menu" data-i18n="nav.menu">Menu</a></li>
+        <li><a href="reservation.html" data-page="reservation" data-i18n="nav.reservation">Réservation</a></li>
+        <li><a href="events.html" data-page="events" data-i18n="nav.events">Événements</a></li>
+        <li><a href="gallery.html" data-page="gallery" data-i18n="nav.gallery">Galerie</a></li>
+        <li>
+          <div class="lang-switch">
+            <button class="lang-btn active" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+          </div>
+        </li>
+      </ul>
+      <button class="menu-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <h1 data-i18n="galleryPage.title">Galerie</h1>
+    <p data-i18n="galleryPage.subtitle">L'univers visuel de FOREST — ambiance, plats et moments</p>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="gallery-grid">
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80" alt="Salle principale">
+          <div class="gallery-overlay"><span data-i18n="galleryPage.g1">Salle principale</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Plat signature">
+          <div class="gallery-overlay"><span data-i18n="galleryPage.g2">Plat signature</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80" alt="Terrasse ombragée">
+          <div class="gallery-overlay"><span data-i18n="galleryPage.g3">Terrasse ombragée</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600&q=80" alt="Bar à vins">
+          <div class="gallery-overlay"><span data-i18n="galleryPage.g4">Bar à vins</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Entrée du restaurant">
+          <div class="gallery-overlay"><span data-i18n="galleryPage.g5">Entrée du restaurant</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&q=80" alt="Dessert maison">
+          <div class="gallery-overlay"><span data-i18n="galleryPage.g6">Dessert maison</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1556910103-1c02745aae1d?w=600&q=80" alt="Cuisine ouverte">
+          <div class="gallery-overlay"><span data-i18n="galleryPage.g7">Cuisine ouverte</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&q=80" alt="Soirée événement">
+          <div class="gallery-overlay"><span data-i18n="galleryPage.g8">Soirée événement</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=600&q=80" alt="Brunch dominical">
+          <div class="gallery-overlay"><span data-i18n="galleryPage.g9">Brunch dominical</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Fermer">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">FOR<span>EST</span></a>
+          <p data-i18n="footer.desc">Restaurant gastronomique au cœur de la nature.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.navTitle">Navigation</h4>
+          <ul>
+            <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+            <li><a href="menu.html" data-i18n="nav.menu">Menu</a></li>
+            <li><a href="reservation.html" data-i18n="nav.reservation">Réservation</a></li>
+            <li><a href="events.html" data-i18n="nav.events">Événements</a></li>
+            <li><a href="gallery.html" data-i18n="nav.gallery">Galerie</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.contactTitle">Contact</h4>
+          <ul>
+            <li data-i18n="footer.address">12 Allée des Chênes, 75016 Paris</li>
+            <li data-i18n="footer.phone">+33 1 42 00 00 00</li>
+            <li data-i18n="footer.email">contact@forest-restaurant.fr</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.hoursTitle">Horaires</h4>
+          <ul>
+            <li data-i18n="footer.hours1">Mar – Sam : 12h – 14h30 / 19h – 22h30</li>
+            <li data-i18n="footer.hours2">Dim : Brunch 10h – 15h</li>
+            <li data-i18n="footer.hours3">Lun : Fermé</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footer.rights">© 2026 FOREST Restaurant. Tous droits réservés.</span>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
